@@ -164,8 +164,7 @@ jobs:
     needs: deploy
     steps:
     - name: Set up environment variables
-      run: echo '::set-env name=MESSAGE::Деплой успешно выполнен! Push от ${{ github.actor }}. Сообщение коммита: ${{ github.event.commits[0].message }}.
-      Ссылка на коммит: https://github.com/${{ github.repository }}/commit/${{ github.sha }}'
+      run: echo '::set-env name=MESSAGE::Деплой успешно выполнен! Push от ${{ github.actor }}. Сообщение коммита: ${{ github.event.commits[0].message }}.Ссылка на коммит: https://github.com/${{ github.repository }}/commit/${{ github.sha }}'
 
     - name: Send message
       uses: appleboy/telegram-action@master
