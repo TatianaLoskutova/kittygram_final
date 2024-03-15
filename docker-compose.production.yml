@@ -15,6 +15,8 @@ services:
   backend:
     image: tanyaloskutova/kittygram_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
       - static_volume:/backend_static
       - media_volume:/media
@@ -27,6 +29,9 @@ services:
   gateway:
     image: tanyaloskutova/kittygram_gateway
     env_file: .env
+    depends_on:
+      - backend
+      - frontend
     volumes:
       - static_volume:/static/
       - media_volume:/media/
