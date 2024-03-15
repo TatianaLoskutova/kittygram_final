@@ -52,3 +52,5 @@ DB_PORT= порт, по которому Django будет обращаться 
 **5)** Запустить проект:
 
     python manage.py runserver
+
+![Workflow Status](https://img.shields.io/github/workflow/status/tatianaloskutova/kittygram_final/message check)
