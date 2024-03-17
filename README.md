@@ -53,4 +53,4 @@ DB_PORT= порт, по которому Django будет обращаться 
 
     python manage.py runserver
 
-![Workflow Status](https://img.shields.io/github/workflow/status/tatianaloskutova/kittygram_final/message check)
+![Workflow Status](https://img.shields.io/github/workflow/status/tatianaloskutova/kittygram_final/done)
